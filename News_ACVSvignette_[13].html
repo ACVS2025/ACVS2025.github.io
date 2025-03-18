@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+</style>
+</head>
+<body>
+
+<title></title>
+<style type="text/css">/* CSS for the news box */
+        .news-box {
+            border: 2px solid #333; /* Solid border */
+            padding: 20px; /* Padding around the box content */
+            background-color: #f9f9f9; /* Light background */
+            width: 85%; /* Set box width to 85% for flexibility */
+            max-width: 750px; /* Max width */
+            margin: 20px auto; /* Center the box horizontally */
+            box-sizing: border-box; /* Include padding and border in element's total width and height */
+            font-family: 'Arial', sans-serif; /* Font family for the news box */
+        }
+
+        /* CSS for the header */
+        .header {
+            background-color: #333; /* Dark background for the header */
+            color: white; /* White text color */
+            padding: 10px; /* Padding around the header content */
+            text-align: center; /* Center the text */
+            font-weight: bold; /* Bold text */
+            display: flex; /* Use Flexbox for layout */
+            justify-content: space-around; /* Distribute items evenly */
+            overflow-x: auto; /* Enable horizontal scroll */
+            font-family: 'Arial', sans-serif; /* Font family for the header */
+        }
+
+        .header span {
+            margin: 0 5px; /* Spacing between text items */
+            flex: 0 0 auto; /* Prevent items from shrinking or growing */
+            text-align: center; /* Center text within each span */
+            white-space: nowrap; /* Prevent wrapping */
+        }
+
+        .header span:hover {
+            color: #00ccff; /* Change text color on hover */
+            cursor: pointer; /* Change cursor to pointer on hover */
+        }
+
+        /* Divider line */
+        .divider {
+            border-top: 1px solid #ddd; /* Light gray border for the divider */
+            margin: 10px 0; /* Margin above and below the divider */
+        }
+
+        /* CSS for the headline */
+        .headline {
+            font-size: 1.5em; /* Size of headline text */
+            color: #333; /* Text color */
+            font-weight: bold; /* Bold text */
+            margin: 0; /* No extra margin */
+            font-family: 'Georgia', serif; /* Font family for the headline */
+        }
+
+        /* CSS for the photo */
+        .news-photo {
+            width: 100%; /* Make the photo fit the width of the box */
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 5px; /* Rounded corners */
+        }
+
+        /* CSS for the text content */
+        .news-content {
+            font-size: 1em; /* Font size for the text */
+            color: #555; /* Text color */
+            line-height: 1.5; /* Line spacing */
+            margin-top: 20px; /* Margin at the top of the content */
+            font-family: 'Arial', sans-serif; /* Font family for the text content */
+        }
+
+        /* CSS for paragraph spacing */
+        .news-content p {
+            margin-bottom: 20px; /* Add space between paragraphs */
+        }
+
+/* Responsive styles */
+@media (max-width: 600px) {
+    .news-box {
+        padding: 15px; /* Reduce padding for small screens */
+    }
+
+    .headline {
+        font-size: 1.2em; /* Smaller headline font size */
+    }
+
+    .news-content {
+        font-size: 0.9em; /* Slightly smaller font size */
+    }
+
+    .header {
+        padding: 5px; /* Reduce padding in the header */
+        font-size: 0.9em; /* Slightly smaller font size */
+        display: grid; /* Use CSS grid for layout */
+        grid-template-columns: repeat(2, 1fr); /* Two columns with equal width */
+        justify-content: center; /* Center the grid horizontally */
+        gap: 5px; /* Gap between grid items */
+    }
+
+    .header span {
+        text-align: center; /* Center text within each span */
+        margin: 0; /* Reset margin */
+    }
+
+    /* Local to be in one column and centered */
+    .header span:first-child {
+        grid-column: 1 / span 2; /* Span both columns */
+        text-align: center; /* Center text */
+    }
+
+    /* Classified to be part of the two-column layout */
+    .header span:last-child {
+        grid-column: auto; /* Reset grid column */
+    }
+}
+
+/*difference in text will follow*/
+</style>
+<div class="news-box">
+<div class="header"><span>Local</span> <span>National</span> <span>Business</span> <span>Sport</span> <span>World</span> <span>Weather</span> <span>Classified</span></div>
+&nbsp;
+
+<h2 class="headline">BREAKING NEWS: Internal government inquiry finds breach of trust over abuse of funds.</h2>
+
+<p>By Australian News Service on 8 Feb, 2025 11:45 AM<br>
+&nbsp;</p>
+<div class="news-content">
+<p>An <a href="#" style="color: #0158CC;">internal government inquiry</a> has just released its report on alleged failures of public duty by ${e://Field/State_full} Government Minister Alex Smith.<br>
+<br>
+Smith came under scrutiny for allegedly <a href="#" style="color: #0158CC;">using taxpayer funds</a> to pay for private family holiday trips over the past two years. The inquiry’s review into the claims was sparked by accusations against Smith by ${e://Field/partyID} MP Chris Ellis late last year.<br>
+<br>
+The inquiry’s report upholds the allegations, concluding that Smith’s abuse of taxpayer funds did breach the public’s trust.<br>
+<br>
+
+</b></p>
+</div>
+</div>
+
+
+</body>
+</html>
